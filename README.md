@@ -1,17 +1,17 @@
-# hypercore-session
+# @ddatabase/session
 
-Make a session from a Hypercore that can auto cancel all inflight requests / downloads.
+Make a session from a dDatabase that can auto cancel all inflight requests / downloads.
 
 ```
-npm install hypercore-session
+npm install @ddatabase/session
 ```
 
 ## Usage
 
 ``` js
-const HypercoreSession = require('hypercore-session')
+const DDatabase Session = require('@ddatabase/session')
 
-const session = new HypercoreSession(feed)
+const session = new DDatabase Session(feed)
 
 // get a block
 const block = await session.get(42)
