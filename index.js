@@ -1,4 +1,4 @@
-module.exports = class HypercoreSession {
+module.exports = class DDatabaseSession {
   constructor (feed, opts) {
     this.feed = feed
     this.checkout = (opts && opts.checkout) || 0
@@ -12,7 +12,7 @@ module.exports = class HypercoreSession {
   }
 
   clone () {
-    return new HypercoreSession(this.feed, this.defaults)
+    return new DDatabaseSession(this.feed, this.defaults)
   }
 
   ready () {
